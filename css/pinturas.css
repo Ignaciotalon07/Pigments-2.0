@@ -1,0 +1,158 @@
+/* General */
+body {
+  background-color: #121212; /* oscuro */
+  font-family: "Montserrat", sans-serif;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección principal */
+main {
+  padding-bottom: 2rem;
+  background-color: #1e1e1e;
+}
+
+/* Títulos */
+h2,
+h3 {
+  font-weight: 700;
+  color: #f39c12;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* Párrafos */
+p {
+  color: #bbb;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* CARDS PINTURAS */
+
+.card {
+  background-color: #1e1e1e;
+  border: 2px solid #f39c12;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(243, 156, 18, 0.7);
+}
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem 1.25rem;
+}
+
+.card-title {
+  color: #f39c12;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: 2px solid #f39c12;
+  color: #f39c12;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0 0 12px 12px;
+}
+
+/* PALETA DE COLORES */
+#pinturas {
+  background-color: #1e1e1e;
+  padding: 3rem;
+}
+#pinturas h3 {
+  margin-top: 2rem;
+}
+.container-colors {
+  padding: 0 8rem 0 3rem;
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-block {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 15px 4px rgba(173, 90, 6, 0.202); /* difuminado borde */
+}
+
+.color-block:hover {
+  transform: scale(1.1);
+}
+
+/* Sección por qué elegir Pigments */
+.bg-dark {
+  background-color: #121212 !important;
+}
+
+.list-unstyled {
+  padding-left: 0;
+}
+
+.list-unstyled li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #ddd;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.list-unstyled li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f39c12;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffb94a;
+}

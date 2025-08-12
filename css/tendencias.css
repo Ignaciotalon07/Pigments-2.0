@@ -1,0 +1,115 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #121212;
+  color: #ddd;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  color: #ff9800; /* naranja Pigments */
+}
+
+/* Grid de Tendencias */
+.grid-tendencias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* Tarjetas */
+.tendencia-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.tendencia-card:hover {
+  transform: scale(1.05);
+}
+
+.tendencia-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.tendencia-card:hover img {
+  filter: brightness(1);
+}
+
+.color-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tendencia-card:hover .color-overlay {
+  opacity: 0.3;
+}
+
+.tendencia-texto {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  z-index: 10;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.tendencia-texto h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.tendencia-texto p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Paletas de colores */
+.paletas-colores {
+  text-align: center;
+}
+
+.color-block {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.color-block:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .grid-tendencias {
+    grid-template-columns: 1fr;
+  }
+}

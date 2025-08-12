@@ -1,0 +1,209 @@
+/* Fuentes y colores base */
+body {
+  background-color: #121212;
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header h1 {
+  font-weight: 900;
+  color: #fff700;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.4s ease, left 0.4s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #f39c12 !important;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Hero */
+.hero {
+  height: 90vh; /* ocupa todo el alto de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #121212;
+}
+
+.hero-content {
+  max-width: 1200px;
+  padding-bottom: 5rem;
+}
+
+.main-title {
+  display: block;
+  font-size: 9rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 0;
+  padding-top: 0;
+  color: #fff700;
+}
+
+.subtitle {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 6rem);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.description {
+  margin-top: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+/* IMAGENES NOTICAS FRESCAS */
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* IMAGENES CARRUSEL */
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-position: center;
+  background-color: #212529; /* o el color que quieras para rellenar */
+}
+
+/* Características */
+.features {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+}
+
+.features h2 {
+  color: #f39c12;
+}
+
+.features ul li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.features ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #f39c12;
+  font-weight: 700;
+}
+
+/* PIDE TU COLOR */
+.pide-color {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* STATS */
+.stats-section {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats-section h2 {
+  font-size: 5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  color: #ff0707;
+}
+.stats-section h2:hover {
+  transform: scale(1.1);
+  color: #ff0707; /* Amarillo Bootstrap */
+}
+/* EXITO */
+.container-exito h2 {
+  font-size: 3rem;
+}
+.testimonials-section p {
+  color: #555;
+}
+
+.testimonials-section .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonials-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.contact-form h3 {
+  color: #f39c12;
+}
+
+.form-label {
+  color: #ccc;
+}
+
+.form-control {
+  background-color: #121212;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+.form-control:focus {
+  background-color: #121212;
+  border-color: #f39c12;
+  box-shadow: 0 0 8px #f39c12;
+  color: #eee;
+}
+
+/* Footer */
+footer {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

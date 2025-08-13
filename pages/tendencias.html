@@ -18,61 +18,74 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="py-5">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center gap-2">
-          <!-- Ícono -->
-          <img
-            src="../images/ico.svg"
-            alt="Logo Pigments"
-            width="40"
-            height="40"
-          />
+    <header class="py-4">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo + Título -->
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="/index.html"
+          >
+            <img
+              src="../images/ico.svg"
+              alt="Logo Pigments"
+              width="40"
+              height="40"
+            />
+            <h1 class="m-0 fs-1">Pigments</h1>
+          </a>
 
-          <!-- Título -->
-          <h1 class="m-0">Pigments</h1>
+          <!-- Botón Hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto font-m text-warning">
+              <li class="nav-item">
+                <a
+                  href="/pages/pinturas.html"
+                  class="nav-link text-light fw-semibold"
+                  >Pinturas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/pages/tendencias.html"
+                  class="nav-link text-light fw-semibold"
+                  >Tendencias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/pages/consejos.html"
+                  class="nav-link text-light fw-semibold"
+                  >Consejos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/pages/contacto.html"
+                  class="nav-link text-light fw-semibold"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <nav>
-          <ul class="nav font-m text-warning">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link text-light fw-semibold"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="/pages/pinturas.html"
-                class="nav-link text-light fw-semibold"
-                >Pinturas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="/pages/tendencias.html"
-                class="nav-link text-light fw-semibold"
-                >Tendencias</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="/pages/consejos.html"
-                class="nav-link text-light fw-semibold"
-                >Consejos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="/pages/contacto.html"
-                class="nav-link text-light fw-semibold"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
 
+    <!-- TENDENCIAS -->
     <main class="container py-5">
       <section class="mb-5 text-center">
         <h2 class="display-5 fw-bold text-warning mb-3 fs-1">

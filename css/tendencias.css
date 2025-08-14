@@ -107,7 +107,14 @@ a {
   text-decoration: none;
 }
 
-/* Responsive */
+/* RESPONSIVE PARA DESKTOP */
+@media (min-width: 576px) and (max-width: 991px) {
+  .grid-tendencias {
+    grid-template-columns: 2fr;
+  }
+}
+
+/* RESPONSIVE PARA MOVILE */
 @media (max-width: 576px) {
   .grid-tendencias {
     grid-template-columns: 1fr;

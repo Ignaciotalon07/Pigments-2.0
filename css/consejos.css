@@ -83,6 +83,15 @@ aside p {
   color: #222;
 }
 
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* MEDIA PARA MOVILE*/
 @media (max-width: 575px) {
   .main-title {

@@ -73,6 +73,16 @@ form .form-control:focus {
   color: #222;
 }
 
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* MEDIA PARA DESKTOP */
 @media (min-width: 576px) and (max-width: 991px) {
   .imagen-equipo {

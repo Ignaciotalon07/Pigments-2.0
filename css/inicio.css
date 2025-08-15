@@ -173,7 +173,7 @@ footer p {
   line-height: 1.5;
 }
 
-/* MEDIA PARA MOVILE PEQUEÑO */
+/* MEDIA PARA MOVILE*/
 @media (max-width: 575px) {
   /* Hero content centrado y con padding */
   .hero-content {

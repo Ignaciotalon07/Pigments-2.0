@@ -82,11 +82,7 @@ h3 {
   margin-top: 2rem;
 }
 .container-colors {
-  padding: 0 8rem 0 3rem;
   margin: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .color-block {
   width: 60px;
@@ -144,4 +140,31 @@ footer p {
   color: #bbb;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* RESPONSIVE PARA MOVILE */
+
+@media (max-width: 575px) {
+  /* PALETA DE COLORES */
+  .container-colors {
+    padding: 0;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .color-block {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* PORQUE ELEGIR PIGMENTS */
+  .list-unstyled li {
+    font-size: 0.9rem;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 0.7rem;
+  }
 }

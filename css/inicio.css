@@ -58,7 +58,7 @@ body {
 /* IMAGENES CARRUSEL */
 .carousel-item img {
   width: 100%;
-  height: 600px;
+  height: 550px;
   object-position: center;
   background-color: #212529; /* o el color que quieras para rellenar */
 }
@@ -173,8 +173,8 @@ footer p {
   line-height: 1.5;
 }
 
-/* MEDIA PARA MOVILE */
-@media (max-width: 576px) {
+/* MEDIA PARA MOVILE PEQUEÑO */
+@media (max-width: 575px) {
   /* Hero content centrado y con padding */
   .hero-content {
     text-align: center;
@@ -204,11 +204,9 @@ footer p {
     font-size: 1rem;
     line-height: 1.4;
   }
-
   /* CARRUSEL IMAGENES */
   .carousel-item img {
-    height: 300px;
-    object-position: center;
+    height: 250px;
   }
   /* STATS */
   .stats-section {
@@ -218,17 +216,27 @@ footer p {
     padding-bottom: 0;
   }
   .stats-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     transition: transform 0.2s ease, color 0.2s ease;
-    color: #ff0707;
   }
-
   /* CARACTERISTICAS */
   .container h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .list-unstyled li {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  /* FORMULARIO */
+  .contact-form {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 0;
+  }
+  /* Footer */
+  footer p {
+    color: #bbb;
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 }
 

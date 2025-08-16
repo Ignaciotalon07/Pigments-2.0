@@ -29,6 +29,14 @@ body {
   height: 450px;
   object-fit: cover;
 }
+/* QUIENES SOMOS */
+.quienes-somos {
+  margin: 3rem;
+  padding: 3rem;
+}
+.parrafo {
+  font-size: 1.2rem;
+}
 
 /* SECCION COMENTARIOS */
 .carousel-item blockquote {
@@ -99,5 +107,17 @@ a {
   .imagen-equipo {
     width: 350px;
     height: 350px;
+  }
+  /* QUIENES SOMOS */
+  .quienes-somos {
+    margin: 1rem 0 1rem 0;
+    padding: 2rem;
+  }
+  .parrafo {
+    font-size: 0.9rem;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 0.7rem;
   }
 }

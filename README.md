@@ -52,4 +52,4 @@ Si tienes alguna pregunta, comentario o consulta, no dudes en contactarnos:
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
----
+#¡Esperamos que disfrutes de tu experiencia en Pigments! Visítanos en (https://pigments-2-0.vercel.app/index.html) y descubre un mundo de colores y creatividad.
